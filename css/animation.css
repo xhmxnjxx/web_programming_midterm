@@ -1,0 +1,57 @@
+
+/* index.html  */
+
+.header .navigation .logo img {
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.content .images img {
+
+}
+
+
+/* tour.html */
+.tour img {
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes zoom {
+  0% { transform: scale(0.8, 0.8); }
+  50% { transform: scale(1.2, 1.2); }
+  100% { transform: scale(0.8, 0.8); }
+}
+
+@keyframes bounce {
+    0% { transform: translate(0, -20%);}
+    25% { transform: translate(-25%, 0);}
+    50% { transform: translate(0, 25%); }
+    75% { transform: translate(25%, 0);}
+    100% { transform: translate(0, -25%); }
+
+@keyframes circle_rotation {
+  0% { transform: rotate(0deg); }
+  12.5% {transform: rotate(45deg); }
+  25% { transform: rotate(90deg); }
+  37.5% { transform: rotate(135deg); }
+  50% { transform: rotate(180deg); }
+  62.5% { transform: rotate(225deg); }
+  75% { transform: rotate(270deg); }
+  87.5% { transform: rotate(315deg); }
+  100% { transform: rotate(360deg); }
+
+}

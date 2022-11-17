@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+  font-family: Arial;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: 'Creepster', cursive;
+  line-height: 100px;
+  height: 100px;
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+
+.album-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: : center;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  margin: 20px;
+  text-align: center;
+}
+
+div.lany, div.malibu_nights, div.mamas_boy, div.gg_bb_xx {
+  border: 3px solid white;
+}
+
+.album-grid-container img {
+  width: 100%;
+}
+
+.album-grid-container h2 {
+  font-family: 'Creepster', cursive;
+  letter-spacing: 2px;
+}
+
+.album-grid-container p {
+  font-family: 'Creepster', cursive;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+/* Code for tablet screen */
+@media screen and (max-width: 1080px) {
+
+  .album-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+/* Code for phone screen */
+@media screen and (max-width: 720px) {
+  .album-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+}

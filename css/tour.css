@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap');
+
+body {
+  font-family: 'Black And White Picture', sans-serif;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.header {
+  margin: 20px;
+}
+
+
+.header img {
+  width: 300px;
+  margin: 20px;
+
+}
+
+.header img:hover {
+
+}
+
+
+.tour-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  justify-content: : center;
+  margin: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 50px;
+  margin: 20px;
+}
+
+.day {
+  border: 3px solid white;
+  padding: 5px;
+}
+
+.calendar {
+  font-size: 20px;
+}
+
+
+.day-grid-container, .date-grid-container {
+  display: grid;
+  grid-template-columns:repeat(7, 1fr);
+  grid-auto-rows: 1fr;
+  grid-gap: 0;
+
+}
+
+
+.date-grid-container p {
+  margin: 5%;
+}
+
+.date-grid-container img {
+  width: 35%;
+  margin: 5%;
+}
+
+.date {
+  border: 3px solid white;
+  padding-top: 5px;
+  height: 160px;
+}
+
+
+
+/* Code for tablet screen */
+@media screen and (max-width: 1080px) {
+
+  .tour-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .header img {
+    width: 250px;
+    margin: 20px;
+  }
+
+  .calendar {
+    font-size: 18px;
+  }
+
+}
+
+/* Code for phone screen */
+@media screen and (max-width: 720px) {
+  .tour-grid-container {
+    grid-template-columns: 1fr;
+  }
+  .header img {
+    width: 200px;
+    margin: 20px;
+  }
+
+  .calendar {
+    font-size: 16px;
+  }
+}

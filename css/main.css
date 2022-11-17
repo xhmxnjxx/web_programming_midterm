@@ -1,0 +1,47 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial;
+  color: white;
+  background-color: black;
+  text-align: center;
+  background-image: url('../images/main/background.jpg');
+  background-attachment: fixed;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+
+
+.content .images img {
+  width: 480px;
+  margin: 0 10px;
+  opacity: 0.5;
+}
+
+/* Code for tablet screen */
+@media screen and (max-width: 1080px) {
+  .content .images img {
+    width: 320px;
+
+
+}
+
+/* Code for phone screen */
+@media screen and (max-width: 720px) {
+  .content .images img {
+    width: 200px;
+  }
+
+}
